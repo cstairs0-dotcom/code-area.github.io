@@ -1,14 +1,6 @@
-name: My First GitHub Action
-
-on:
-  push:
-
+on: push
 jobs:
-  test-job:
+  a:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Say hello
-        run: echo "GitHub Actions is working!"
+      - run: echo hi
